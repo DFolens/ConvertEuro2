@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/btconvert"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Convert"
+        android:layout_below="@+id/widget33"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/widget33"
+        android:layout_width="200dp"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/lbldollars"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dollars"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/dollars"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="end"
+            />
+        <TextView
+            android:id="@+id/lbleuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euros"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/euros"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="end"
+            />
+        <RadioGroup
+            android:id="@+id/widget39"
+            android:layout_width="189dp"
+            android:layout_height="76dp">
+            <RadioButton
+                android:id="@+id/rbdtoe"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Dollars to Euro" />
+            <RadioButton
+                android:id="@+id/rbetod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Euro to Dollars" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="59dp">
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate $:&#8364;" />
+        <EditText
+            android:id="@+id/edRate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:hint="1.00"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
